@@ -15,6 +15,13 @@
       "when": 1710519748773,
       "tag": "0001_rainy_mephisto",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1710761352173,
+      "tag": "0002_glossy_korvac",
+      "breakpoints": true
     }
   ]
 }
