@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import db from '@/lib/supabase/db';
 import { ThemeProvider } from "@/lib/providers/next-theme-provider";
+import AppStateProvider from "@/lib/providers/state-provider";
 import { DM_Sans} from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 
@@ -24,7 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={twMerge('bg-background', inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <AppStateProvider>
           {children}
+          </AppStateProvider>
         </ThemeProvider>
         </body>
     </html>
